@@ -40,6 +40,15 @@ function fixCar() {
     return car
 }
 
+function addGrades() {
+    const student = {
+        name: 'Anthony DeRosa',
+        email: 'anthony.derosa@codeimmersives.com',
+        grades: [80, 100, 95]
+    }
+    student.grades.push(88, 70, 90);
+    return student
+}
 
 
 
