@@ -50,6 +50,19 @@ function addGrades() {
     return student
 }
 
+function getDataType(object, key) {
+    const car = {
+        make: 'Ford',
+        model: 'Mustang',
+        year: 1969,
+        needsMaitenance: false
+    }
+    return typeof object[key];
+}
+
+function addTodo() {
+    
+}
 
 
 
