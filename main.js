@@ -2,8 +2,22 @@
 // │ Your code here! │
 // └─────────────────┘
 
+function createUser(first, last) {
+    const user = {
+        firstName: 'Mesi',
+        lastName: 'Kaleziq'
+    }
+    return user
+}
 
-
+function setAge(userObject, age) {
+    const user = {
+        firstName: 'Tim',
+        lastName: 'Horton'
+    }
+    user.age = 50;
+    return user
+}
 
 
 
