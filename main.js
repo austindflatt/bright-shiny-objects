@@ -29,6 +29,17 @@ function incrementAge() {
     return user
 }
 
+function fixCar() {
+    const car = {
+        make: 'Ford',
+        model: 'Mustang',
+        year: 1969,
+        needsMaitenance: true
+    }
+    car.needsMaitenance = false
+    return car
+}
+
 
 
 
