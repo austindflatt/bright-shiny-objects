@@ -60,8 +60,13 @@ function getDataType(object, key) {
     return typeof object[key];
 }
 
-function addTodo() {
-    
+function addTodo(todos, newTodo) {
+    todos.push(newTodo);
+    return todos
+}
+
+function addSong(playlist, newSong) {
+
 }
 
 
