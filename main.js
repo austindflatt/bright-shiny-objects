@@ -19,6 +19,16 @@ function setAge(userObject, age) {
     return user
 }
 
+function incrementAge() {
+    const user = {
+        firstName: 'Tim',
+        lastName: 'Horton',
+        age: 50
+    }
+    user.age++
+    return user
+}
+
 
 
 
