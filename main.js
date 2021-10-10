@@ -57,7 +57,7 @@ function getDataType(object, key) {
         year: 1969,
         needsMaitenance: false
     }
-    return typeof object[key];
+    return typeof object[key]
 }
 
 function addTodo(todos, newTodo) {
@@ -66,11 +66,10 @@ function addTodo(todos, newTodo) {
 }
 
 function addSong(playlist, newSong) {
-
+    playlist["songs"].push(newSong);
+	playlist["duration"] += newSong["duration"];
+	return playlist
 }
-
-
-
 
 
 // ┌─────────────────────────────────────────────────────────────────────────┐
