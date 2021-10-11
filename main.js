@@ -71,6 +71,22 @@ function addSong(playlist, newSong) {
 	return playlist
 }
 
+function updateReportCard(reportCard, newGrade) {
+    reportCard.grades.push(newGrade);
+    let sum = 0;
+    if (newGrade < reportCard.lowestGrade) {
+        reportCard.lowestGrade = newGrade;
+    }
+    if (newGrade > reportCard.highestGrade) {
+        reportCard.highestGrade = newGrade;
+    }
+    for (const grade of reportCard.grades) {
+        sum += grade;
+    }
+    reportCard.averageGrade = sum / reportCard.grades.length;
+    return reportCard
+}
+
 
 // ┌─────────────────────────────────────────────────────────────────────────┐
 // │ Code used for testing. Do not modify!                                   │                         
